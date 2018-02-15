@@ -7,15 +7,15 @@ import javax.persistence.Id;
 @Entity
 public class Category implements Serializable{
 	@Id
-	private String categoryId;
+	private int categoryId;
 	private String name;
 	public Category () {
 		
 	}
-	public String getCategoryId() {
+	public int getCategoryId() {
 		return categoryId;
 	}
-	public void setCategoryId(String categoryId) {
+	public void setCategoryId(int categoryId) {
 		this.categoryId = categoryId;
 	}
 	public String getName() {

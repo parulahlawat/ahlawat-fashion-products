@@ -31,7 +31,7 @@ li a:hover{
 <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="./resources/images/pa.jpg"class="responsive" width="600"style="height:600px;">
+        <img src="./resources/images/pa.jpg" class="responsive" width="600"style="height:600px;">
 	  </div>
       <div class="item">
         <img src="./resources/images/catwalk.jpg"class="responsive" width="600"style="height:600px;">
@@ -69,9 +69,8 @@ li a:hover{
 </div>
 </center>
 <br><br><br><br><br><br>
- 
-</div>
-<%@ include file ="template/Footer.jsp" %>>
+ </div>
+<%@ include file ="template/Footer.jsp" %>
 </body>
 </html>
 

@@ -19,7 +19,7 @@ li a:hover{
 </style>
 </head>
 <body bgcolor="MEDIUMAQUAMARINE">
-
+<%@  include file="template/Header.jsp" %>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -31,18 +31,18 @@ li a:hover{
 <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="./WEB-INF/resources/images/pa.jpg"class="responsive" width="600"style="height:600px;">
+        <img src="./resources/images/pa.jpg"class="responsive" width="600"style="height:600px;">
 	  </div>
       <div class="item">
-        <img src="./WEB-INF/resources/images/catwalk.jpg"class="responsive" width="600"style="height:600px;">
+        <img src="./resources/images/catwalk.jpg"class="responsive" width="600"style="height:600px;">
 		
       </div>
       <div class="item">
-        <img src="./WEB-INF/resources/images/armaan.jpg"class="responsive" width="600"style="height:600px;">
+        <img src="./resources/images/armaan.jpg"class="responsive" width="600"style="height:600px;">
 		
       </div>
 	  <div class="item">
-        <img src="./WEB-INF/resources/images/aa.jpg"class="responsive"  width="600" style="height:600px;">
+        <img src="./resources/images/aa.jpg"class="responsive"  width="600" style="height:600px;">
 		
       </div>
 	  </div>
@@ -63,14 +63,14 @@ li a:hover{
   <br>
   <br>
 <div class="container">     
-  <img src="./WEB-INF/resources/images/mm1.jpg" class="img-circle"  width="250" height="236"> 
-  <img src="./WEB-INF/resources/images/mm3.jpg"class="img-circle"   width="250" height="236"> 
-  <img src="./WEB-INF/resources/images/mm2.jpg"class="img-circle"   width="250" height="236"> 
+  <img src="./resources/images/mm1.jpg" class="img-circle"  width="250" height="236"> 
+  <img src="./resources/images/mm3.jpg"class="img-circle"   width="250" height="236"> 
+  <img src="./resources/images/mm2.jpg"class="img-circle"   width="250" height="236"> 
 </div>
 </center>
 <br><br><br><br><br><br>
- 
-</div>
+ </div>
+<%@ include file ="template/Footer.jsp" %>
 </body>
 </html>
 

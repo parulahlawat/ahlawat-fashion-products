@@ -7,20 +7,20 @@ import javax.persistence.Id;
 @Entity
 public class Product implements Serializable{
 	@Id
-	private String productId;
+	private int productId;
 	private String name;
 	private Long price;
 	private int quantity;
 	private String description;
 	private String imageURL;
-	private String supplierId;
+	private int supplierId;
 	public Product () {
 		
 	}
-	public String getProductId() {
+	public int getProductId() {
 		return productId;
 	}
-	public void setProductId(String productId) {
+	public void setProductId(int productId) {
 		this.productId = productId;
 	}
 	public String getName() {
@@ -53,10 +53,10 @@ public class Product implements Serializable{
 	public void setImageURL(String imageURL) {
 		this.imageURL = imageURL;
 	}
-	public String getSupplierId() {
+	public int getSupplierId() {
 		return supplierId;
 	}
-	public void setSupplierId(String supplierId) {
+	public void setSupplierId(int supplierId) {
 		this.supplierId = supplierId;
 	}
 	

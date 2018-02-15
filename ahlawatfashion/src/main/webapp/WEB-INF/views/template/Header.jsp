@@ -35,7 +35,7 @@ li a:hover{
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
 						</button>	
-<a class="navbar-brand" href="#">Ahlawat Fashion</a>
+
 
 						
     </div>
@@ -45,7 +45,7 @@ li a:hover{
 	
 	   <li><a href=""><img style="width:40px;height:30px;" src="./resources/images/fs.png" /></a></li>
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Product</a></li>
+      <li><a href="allproducts">Product</a></li>
 	  <li><a href="#">Contact</a></li>
 	   <li class="dropdown">
        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Categories<span class="caret"></span></a>
@@ -55,8 +55,6 @@ li a:hover{
             <li><a href="#">Kids</a></li>
           </ul>
 		  </li>
-	   
-      
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>

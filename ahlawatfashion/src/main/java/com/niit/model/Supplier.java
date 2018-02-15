@@ -7,17 +7,17 @@ import javax.persistence.Id;
 @Entity
 public class Supplier implements Serializable{
 	@Id
-	private String supId;
+	private int supId;
 	private String name;
 	private Long phone;
 	private String email;
 	public Supplier () {
 		
 	}
-	public String getSupId() {
+	public int getSupId() {
 		return supId;
 	}
-	public void setSupId(String supId) {
+	public void setSupId(int supId) {
 		this.supId = supId;
 	}
 	public String getName() {

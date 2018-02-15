@@ -3,17 +3,17 @@ package com.niit.model;
 import java.io.Serializable;
 
 public class Customer  implements Serializable {
-	private String customerId;
+	private int customerId;
 	private String name;
 	private String emailId;
 	private Long phone;
 public Customer() {
 		
 	}
-public String getCustomerId() {
+public int getCustomerId() {
 		return customerId;
 	}
-	public void setCustomerId(String customerId) {
+	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
 	public String getName() {

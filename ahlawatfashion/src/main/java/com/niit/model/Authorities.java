@@ -7,16 +7,16 @@ import javax.persistence.Id;
 @Entity
 public class Authorities implements Serializable {
 	@Id
-	private String authorityId;
+	private int authorityId;
 	private String rolename;
 	private String username;
 public Authorities() {
 		
 	}
-public String getAuthorityId() {
+public int getAuthorityId() {
 	return authorityId;
 }
-public void setAuthorityId(String authorityId) {
+public void setAuthorityId(int authorityId) {
 	this.authorityId = authorityId;
 }
 public String getRolename() {
