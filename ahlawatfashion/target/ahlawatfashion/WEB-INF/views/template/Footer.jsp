@@ -4,7 +4,12 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-s<style type="text/css">footer {
+<style type="text/css">footer {
+   position: absolute; 
+      left: 0;
+
+    overflow: auto;
+     width: 100%;
     padding: 1em;
     color: white;
     background-color: black;
@@ -19,7 +24,7 @@ s<style type="text/css">footer {
 </head>
 <body>
 
-<footer>Copyright &copy;  All Rights Reserved 
+<footer >Copyright &copy;  All Rights Reserved 
  <ul class="nav navbar-nav navbar-right" style ="margin-right:30px;"><a href="#"><li>Terms & Conditions</li></a></ul>
  </footer> 
 </body>

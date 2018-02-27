@@ -34,7 +34,4 @@ public int getCustomerId() {
 	public void setPhone(Long phone) {
 		this.phone = phone;
 	}
-
-	
-
-}
+	}

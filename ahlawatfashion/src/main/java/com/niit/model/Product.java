@@ -3,17 +3,23 @@ package com.niit.model;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import org.springframework.web.multipart.MultipartFile;
 @Entity
 public class Product implements Serializable{
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int productId;
 	private String name;
 	private Long price;
 	private int quantity;
 	private String description;
-	private String imageURL;
+	private MultipartFile imageURL;
 	private int supplierId;
+	
 	public Product () {
 		
 	}
@@ -47,14 +53,15 @@ public class Product implements Serializable{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getImageURL() {
-		return imageURL;
-	}
-	public void setImageURL(String imageURL) {
-		this.imageURL = imageURL;
-	}
+	
 	public int getSupplierId() {
 		return supplierId;
+	}
+	public MultipartFile getImageURL() {
+		return imageURL;
+	}
+	public void setImageURL(MultipartFile imageURL) {
+		this.imageURL = imageURL;
 	}
 	public void setSupplierId(int supplierId) {
 		this.supplierId = supplierId;

@@ -12,7 +12,7 @@ import com.niit.service.ProductService;
 public class ProductController {
 	@Autowired
 	ProductService productService;
-	@RequestMapping("/viewProduct/${productId}")
+	@RequestMapping("/viewProduct/{productId}")
 	public String viewProduct(@PathVariable int productId, Model model) {
 	Product product=productService.getProductById(productId);
 	model.addAttribute("product",product);

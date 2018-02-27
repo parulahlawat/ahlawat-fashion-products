@@ -14,23 +14,37 @@ table, th, td {
 </head>
 <body>
 <%@  include file="template/Header.jsp" %>
-<table>
-<tr>
-      <th>productId</th>
+ <div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>productId</th>
       <th>name</th>
       <th>price</th>
       <th>imageURL</th>
-    </tr>
-<c:forEach items="${products}" var="product">
-<tr>
-      <td>${products.productId}</td>
-      <td>${products.name}</td>
-       <td>${products.price}</td>
-       <!--  <td> img src "<c:url value="/resources/images/${products.imageURL}.jpg"/> " </td>-->
-<li>${product.name}</li>
+      <th>viewMore </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+       <c:forEach items="${products}" var="product">
+      <td>${product.productId}</td>
+       <td>${product.name}</td>
+     <td>${product.price}</td>
+        <td><img class="img-thumbnail" style="width:80px;height:50px;" src="<c:url value="./resources/images/${product.imageURL}.jpg "/> " /> </td>
+<td>
+<a href="viewProduct/${product.productId}"> 
+<span class="glyphicon glyphicon-info-sign">
+</span>
+</a>
+</td>
 </tr>
-</c:forEach>
-</table>
+     
+    </tbody>
+    </c:forEach>
+  </table>
+  </div>
+  <br><br><br>
 <%@ include file ="template/Footer.jsp" %>
 </body>
 </html>

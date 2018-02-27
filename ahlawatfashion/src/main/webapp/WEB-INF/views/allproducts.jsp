@@ -33,7 +33,7 @@ table, th, td {
      <td>${product.price}</td>
         <td><img class="img-thumbnail" style="width:80px;height:50px;" src="<c:url value="./resources/images/${product.imageURL}.jpg "/> " /> </td>
 <td>
-<a href="viewProduct${product.productId}"> 
+<a href="viewProduct/${product.productId}"> 
 <span class="glyphicon glyphicon-info-sign">
 </span>
 </a>

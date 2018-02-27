@@ -35,7 +35,7 @@ li a:hover{
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
 						</button>	
-<a class="navbar-brand" href="#">Ahlawat Fashion</a>
+
 
 						
     </div>
@@ -59,16 +59,27 @@ li a:hover{
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
       <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Sign in</a></li>
+      <c:if test="${pageContext.request.userPrincipal.name != null}">
+       <li><a>Welcome: ${pageContext.request.userPrincipal.name}</a></li>
+        <li><a href="<c:url value="/j_spring_security_logout"/>">Logout</a></li>  
+<c:if test="${pageContext.request.userPrincipal.name != 'admin'}">
+ <li><a href="<c:url value="/customer/cart"/>">Cart</a></li> </c:if>  
+<c:if test="${pageContext.request.userPrincipal.name == 'admin'}">
+ <li><a href="<c:url value="/admin"/>">Admin</a></li> </c:if>  
+</c:if>  
+<c:if test="${pageContext.request.userPrincipal.name == null}"> <li><a href="<c:urlvalue="/login"/>">Login</a></li> <li><ahref="<c:urlvalue="/register"/>">Register</a></li> </c:if> b
     </ul>
 	<form class="navbar-form navbar-left" action="/action_page.php">
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search" name="search">
         <div class="input-group-btn">
           <button type="submit" class="btn btn-default">Submit</button>
+          
         </div>
       </div>
     </form>
   </div>
 </nav>
+
 </body>
 </html>

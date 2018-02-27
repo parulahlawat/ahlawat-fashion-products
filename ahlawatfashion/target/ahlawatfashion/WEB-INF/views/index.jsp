@@ -31,7 +31,7 @@ li a:hover{
 <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="./resources/images/pa.jpg"class="responsive" width="600"style="height:600px;">
+        <img src="./resources/images/pa.jpg" class="responsive" width="600"style="height:600px;">
 	  </div>
       <div class="item">
         <img src="./resources/images/catwalk.jpg"class="responsive" width="600"style="height:600px;">
@@ -62,10 +62,25 @@ li a:hover{
   <br>
   <br>
   <br>
-<div class="container">     
+<div class="container"> 
+<div class="col-md-2 col-md-offset-2">
+<figure class="figure">         
   <img src="./resources/images/mm1.jpg" class="img-circle"  width="250" height="236"> 
+  <a href><figcaption class ="figure-caption">Formal</figcaption></a>
+  </figure>
+  </div>
+  <div class="col-md-2 col-md-offset-2">
+  <figure class="figure">  
   <img src="./resources/images/mm3.jpg"class="img-circle"   width="250" height="236"> 
+  <a href><figcaption class ="figure-caption">New generation Kids</figcaption></a>
+  </figure>
+  </div>
+  <div class="col-md-2 col-md-offset-2">
+  <figure class="figure"> 
   <img src="./resources/images/mm2.jpg"class="img-circle"   width="250" height="236"> 
+  <a href><figcaption class ="figure-caption">Denim Clothes</figcaption></a>
+  </figure>
+  </div>
 </div>
 </center>
 <br><br><br><br><br><br>
