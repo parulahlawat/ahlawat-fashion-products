@@ -1,6 +1,6 @@
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -19,7 +19,7 @@
         </div>
 
         <form:form action="${pageContext.request.contextPath}/addProduct"
-                   method="post" commandName="product" enctype="multipart/form-data">
+                   method="post" commandName="product">
             <div class="form-group">
                 <label for="name">Name</label>
                 <form:errors path="name" cssStyle="color:red;" />
@@ -53,8 +53,7 @@
 
         <input type="submit" value="submit" class="btn btn-default">
         <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">Cancel</a>
-
-    </form:form>
+   </form:form>
 <%@include file="template/Footer.jsp" %>
 </body>
 </html>

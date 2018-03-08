@@ -15,10 +15,10 @@
             <h1>Edit Product</h1>
 
 
-            <p class="lead">update the product information</p>
+            
         </div>
 
-        <form:form action="${pageContext.request.contextPath}/editProduct"
+        <form:form action="${pageContext.request.contextPath}/admin/product/editProduct"
                    method="post" commandName="product">
 
          <form:hidden path="productId" value="${product.productId}" />
@@ -34,12 +34,12 @@
                 <form:errors path="price" cssStyle="color:#ff0000;" />
                 <form:input path="price" id="price" class="form-Control" value="${product.price}" />
             </div>
-
-            <div class="form-group">
-                <label for="condition">Condition</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition" value="Fresh" />Fresh</label>
-                <label class="checkbox-inline"><form:radiobutton path="productCondition" id="condition" value="old" />Old</label>
+             <div class="form-group">
+                <label for="description">Description</label>
+                <form:textarea path="description" id="description" class="form-Control" />
             </div>
+            
+            
 
            
             <div class="form-group">
@@ -56,8 +56,8 @@
 
             <br/><br/>
 
-            <input type="submit" value="submit" class="btn btn-default">
-            <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">Cancel</a>
+        <input type="submit" value="submit" class="btn btn-default">
+        <a href="<c:url value="/admin/productInventory" />" class="btn btn-default">Cancel</a>
 
         </form:form>
          <%@ include file ="template/Footer.jsp" %>

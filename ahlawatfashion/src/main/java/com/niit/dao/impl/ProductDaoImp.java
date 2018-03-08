@@ -51,10 +51,22 @@ public Product getProductById(int productId) {
 }
 public void deleteProduct(Product product) {
 	// TODO Auto-generated method stub
-	 Session session = sessionFactory.getCurrentSession();
+	 Session session = sessionFactory.openSession();
      session.delete(product);
      session.flush();
 	
+}
+public void editProduct(Product product) {
+	// TODO Auto-generated method stub
+	 Session session = sessionFactory.openSession();
+     session.saveOrUpdate(product);
+     session.flush();
+}
+public void addProduct(Product product) {
+	// TODO Auto-generated method stub
+	 Session session = sessionFactory.openSession();
+     session.saveOrUpdate(product);
+     session.flush();
 }
 
 }

@@ -8,4 +8,8 @@ List<Product> getAllProducts();
 Product getProductById(int productId);
 
 void deleteProduct(Product product);
+
+void editProduct(Product product);
+
+void addProduct(Product product);
 }

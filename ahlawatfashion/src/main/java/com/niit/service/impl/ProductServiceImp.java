@@ -24,12 +24,11 @@ public class ProductServiceImp implements ProductService {
 		
 	}
 	public void editProduct(Product product) {
-		// TODO Auto-generated method stub
-		
-	}
+		  productDao.editProduct(product);	
+		}
 	public void addProduct(Product product) {
 		// TODO Auto-generated method stub
-		
+		 productDao.addProduct(product);
 	}
 }
 

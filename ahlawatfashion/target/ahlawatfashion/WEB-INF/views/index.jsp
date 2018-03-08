@@ -62,7 +62,7 @@ li a:hover{
   <br>
   <br>
   <br>
-<div class="container"> 
+<div class="container">   
 <div class="col-md-2 col-md-offset-2">
 <figure class="figure">         
   <img src="./resources/images/mm1.jpg" class="img-circle"  width="250" height="236"> 

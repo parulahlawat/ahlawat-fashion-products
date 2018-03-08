@@ -10,16 +10,16 @@ import javax.persistence.Id;
 public class User implements Serializable {
 	@Id
 	 @GeneratedValue(strategy=GenerationType.AUTO)
-	 private int usersId;
+	 private int userId;
 	 private String username;
 	 private String password;
 	 private Boolean enabled;
 	 private int customerId;
-	 public int getUsersId() {
-	 return usersId;
+	 public int getUserId() {
+	 return userId;
 	  }
 	 public void setUsersId(int usersId) {
-	 this.usersId = usersId;
+	 this.userId = usersId;
 	  }
 	 public String getUsername() {
 	 return username;

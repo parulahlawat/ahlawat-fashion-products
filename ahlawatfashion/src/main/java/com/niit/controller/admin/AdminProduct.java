@@ -18,6 +18,7 @@ import com.niit.model.Product;
 import com.niit.service.ProductService;
 
 @Controller
+@RequestMapping("/admin")
 public class AdminProduct {
 
     private Path path;
@@ -28,7 +29,7 @@ public class AdminProduct {
     @RequestMapping("/product/addProduct")
     public String addProduct(Model model){
         Product product = new Product();
-        product.setName("Denim");
+       
         model.addAttribute("product", product);
         return "addProduct";
     }
@@ -43,7 +44,7 @@ public class AdminProduct {
 
         productService.addProduct(product);
 
-        MultipartFile productImage = product.getImageURL();
+     MultipartFile productImage = product.getImageURL();
         String rootDirectory = request.getSession().getServletContext().getRealPath("/");
         path = Paths.get(rootDirectory + "/WEB-INF/resources/images/" + product.getProductId() + ".jpg");
 
@@ -78,11 +79,11 @@ public class AdminProduct {
         }
 
 
-        MultipartFile productImage = product.getImageURL();
+       MultipartFile productImage = product.getImageURL();
         String rootDirectory = request.getSession().getServletContext().getRealPath("/");
         path = Paths.get(rootDirectory + "/WEB-INF/resources/images/" + product.getProductId() + ".jpg");
 
-        if(productImage != null && !productImage.isEmpty()){
+      if(productImage != null && !productImage.isEmpty()){
             try {
                 productImage.transferTo(new File(path.toString()));
             } catch (Exception ex){

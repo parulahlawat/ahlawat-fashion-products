@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Authorities implements Serializable {
 	@Id
 	private int authorityId;
-	private String rolename;
+	private String authority;
 	private String username;
 public Authorities() {
 		
@@ -19,11 +19,11 @@ public int getAuthorityId() {
 public void setAuthorityId(int authorityId) {
 	this.authorityId = authorityId;
 }
-public String getRolename() {
-	return rolename;
+public String getAuthority() {
+	return authority;
 }
-public void setRolename(String rolename) {
-	this.rolename = rolename;
+public void setAuthority(String authority) {
+	this.authority = authority;
 }
 public String getUsername() {
 	return username;
